@@ -7,7 +7,7 @@ import android.os.Message;
 import java.util.List;
 
 import br.com.rotacilio.intentserviceexample.MainActivity;
-import br.com.rotacilio.intentserviceexample.models.Order;
+import br.com.rotacilio.intentserviceexample.retrofit.models.Order;
 
 /**
  * Created by rodrigo.lins on 13/03/2018.

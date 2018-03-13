@@ -6,7 +6,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import br.com.rotacilio.intentserviceexample.R;
-import br.com.rotacilio.intentserviceexample.models.Order;
+import br.com.rotacilio.intentserviceexample.retrofit.models.OrderItem;
 
 /**
  * Created by roqls on 12/03/2018.
@@ -29,7 +29,7 @@ public class OrderViewHolder extends RecyclerView.ViewHolder implements View.OnC
         this.itemView.setOnClickListener(this);
     }
 
-    public void bindView(Order order) {
+    public void bindView(OrderItem order) {
         this.title.setText(order.getTitle());
         this.description.setText(order.getDescription());
         this.value.setText(order.getValue());

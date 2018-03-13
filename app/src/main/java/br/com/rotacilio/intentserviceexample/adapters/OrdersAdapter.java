@@ -1,6 +1,5 @@
 package br.com.rotacilio.intentserviceexample.adapters;
 
-import android.content.Context;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -10,7 +9,7 @@ import java.util.List;
 
 import br.com.rotacilio.intentserviceexample.R;
 import br.com.rotacilio.intentserviceexample.adapters.holders.OrderViewHolder;
-import br.com.rotacilio.intentserviceexample.models.Order;
+import br.com.rotacilio.intentserviceexample.retrofit.models.OrderItem;
 
 /**
  * Created by roqls on 12/03/2018.
@@ -18,9 +17,9 @@ import br.com.rotacilio.intentserviceexample.models.Order;
 
 public class OrdersAdapter extends RecyclerView.Adapter<OrderViewHolder> {
 
-    private List<Order> orders;
+    private List<OrderItem> orders;
 
-    public OrdersAdapter(List<Order> orders) {
+    public OrdersAdapter(List<OrderItem> orders) {
         this.orders = orders;
     }
 
