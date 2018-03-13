@@ -19,9 +19,6 @@
             </intent-filter>
         </activity>
 
-        <service
-            android:name=".services.OpenedOrdersService" />
-
     </application>
 
     <uses-permission android:name="android.permission.INTERNET"/>

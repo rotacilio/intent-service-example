@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">IntentServiceExample</string>
     <string name="title_action_sync">Atualizar Lista</string>
-    <string name="label_activity_main">Pedidos em Aberto</string>
+    <string name="label_activity_main">Pedidos Pendentes</string>
     <string name="title_progress_dialog_orders">Carregando pedidos...</string>
 </resources>
