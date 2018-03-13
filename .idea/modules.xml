@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/IntentServiceExample.iml" filepath="$PROJECT_DIR$/IntentServiceExample.iml" />
+      <module fileurl="file://C:\Users\rodrigo.lins\AndroidStudioProjects\intent-service-example\IntentServiceExample.iml" filepath="C:\Users\rodrigo.lins\AndroidStudioProjects\intent-service-example\IntentServiceExample.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://C:\Users\rodrigo.lins\AndroidStudioProjects\intent-service-example\app\app.iml" filepath="C:\Users\rodrigo.lins\AndroidStudioProjects\intent-service-example\app\app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/intent-service-example.iml" filepath="$PROJECT_DIR$/intent-service-example.iml" />
     </modules>
   </component>
 </project>

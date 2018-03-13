@@ -36,6 +36,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="0.2"
                 android:text="34,99"
+                android:textAlignment="center"
                 android:gravity="center"
                 android:textStyle="bold"
                 android:textAppearance="?android:attr/textAppearanceLarge"/>
