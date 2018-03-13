@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">IntentServiceExample</string>
+    <string name="title_action_sync">Atualizar Lista</string>
+    <string name="label_activity_main">Pedidos em Aberto</string>
+</resources>
