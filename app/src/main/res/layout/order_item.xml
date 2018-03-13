@@ -1,45 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
     <TableLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:padding="20dp"
         android:stretchColumns="*"
-        android:padding="20dp">
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
         <TableRow>
+
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="0.8"
                 android:orientation="vertical">
+
                 <TextView
                     android:id="@+id/orderTitle"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Nome do Pedido"
-                    android:textAppearance="?android:attr/textAppearanceLarge"
-                    android:textStyle="bold"/>
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/black"/>
+
                 <TextView
                     android:id="@+id/orderDescription"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
                     android:text="Descrição do pedido"
-                    android:textStyle="normal"
-                    android:textAppearance="?android:attr/textAppearanceSmall"/>
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textStyle="normal" />
             </LinearLayout>
+
             <TextView
                 android:id="@+id/orderValue"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="0.2"
+                android:gravity="center"
                 android:text="34,99"
                 android:textAlignment="center"
-                android:gravity="center"
+                android:textAppearance="?android:attr/textAppearanceMedium"
                 android:textStyle="bold"
-                android:textAppearance="?android:attr/textAppearanceLarge"/>
+                android:textColor="@android:color/black"/>
         </TableRow>
     </TableLayout>
 

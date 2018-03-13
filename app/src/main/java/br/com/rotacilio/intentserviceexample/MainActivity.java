@@ -1,6 +1,7 @@
 package br.com.rotacilio.intentserviceexample;
 
 import android.app.ProgressDialog;
+import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.DividerItemDecoration;
@@ -71,7 +72,7 @@ public class MainActivity extends AppCompatActivity implements Callback<Order> {
     private void initDialog() {
         this.dialog = new ProgressDialog(this);
         this.dialog.setProgressStyle(ProgressDialog.STYLE_SPINNER);
-        this.dialog.setTitle(getString(R.string.title_progress_dialog_orders));
+        this.dialog.setMessage(getString(R.string.message_progress_dialog_orders));
         this.dialog.setCancelable(false);
         this.dialog.setIndeterminate(true);
         this.dialog.show();
@@ -82,8 +83,14 @@ public class MainActivity extends AppCompatActivity implements Callback<Order> {
     }
 
     private void fetchOrders() {
-        Call<Order> call = new RetrofitConfig().getOrdersService().getOpenedOrders();
-        call.enqueue(this);
+        Handler handle = new Handler();
+        handle.postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                Call<Order> call = new RetrofitConfig().getOrdersService().getOpenedOrders();
+                call.enqueue(MainActivity.this);
+            }
+        }, 2000);
     }
 
     @Override
